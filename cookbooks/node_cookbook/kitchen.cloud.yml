@@ -8,7 +8,7 @@ driver:
   # Name of the aws key
   #aws_ssh_key_id: Hamza-ElAouane-Eng53-ire-key.pem
 
-  # publish without pre merge
+  # publish without pre mergeeeeeee
   # transport:
   #   # Use our key from machine to access the test machine
   #   ssh_key: /c/Users/Hamza\ El\ Aouane/.ssh/Hamza-ElAouane-Eng53-ire-key.pem
