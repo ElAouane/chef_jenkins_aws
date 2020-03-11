@@ -5,6 +5,11 @@ driver:
   require_chef_omnibus: true
   instance_type: t2.micro
   associate_public_ip: true
+#  aws_ssh_key_id: Abdimalik-mao-eng53-ire.pem
+
+  # transport:
+  #
+  #  ssh_key: /c/private-keys/Abdimalik-mao-eng53-ire.pem
 
 ## The forwarded_port port feature lets you connect to ports on the VM guest via
 ## localhost on the host.
