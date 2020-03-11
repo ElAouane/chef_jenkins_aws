@@ -1,0 +1,29 @@
+I, [2020-03-09T13:41:06.291153 #19020]  INFO -- Kitchen: -----> Starting Test Kitchen (v2.3.4)
+E, [2020-03-09T13:41:06.291840 #19020] ERROR -- Kitchen: ------Exception-------
+E, [2020-03-09T13:41:06.291966 #19020] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2020-03-09T13:41:06.292022 #19020] ERROR -- Kitchen: Message: Kitchen YAML file C:/starter-code/cookbooks/kitchen.yml does not exist.
+E, [2020-03-09T13:41:06.292080 #19020] ERROR -- Kitchen: ----------------------
+E, [2020-03-09T13:41:06.292126 #19020] ERROR -- Kitchen: ------Backtrace-------
+E, [2020-03-09T13:41:06.292170 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/loader/yaml.rb:65:in `read'
+E, [2020-03-09T13:41:06.292214 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/config.rb:154:in `data'
+E, [2020-03-09T13:41:06.292257 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/config.rb:132:in `suites'
+E, [2020-03-09T13:41:06.292300 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/config.rb:184:in `filter_instances'
+E, [2020-03-09T13:41:06.292352 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/config.rb:143:in `build_instances'
+E, [2020-03-09T13:41:06.292398 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/config.rb:117:in `instances'
+E, [2020-03-09T13:41:06.292441 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2020-03-09T13:41:06.292483 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2020-03-09T13:41:06.292526 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command/test.rb:40:in `block in call'
+E, [2020-03-09T13:41:06.292570 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2020-03-09T13:41:06.292650 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command/test.rb:38:in `call'
+E, [2020-03-09T13:41:06.292710 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/cli.rb:52:in `perform'
+E, [2020-03-09T13:41:06.292753 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/cli.rb:250:in `test'
+E, [2020-03-09T13:41:06.292794 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+E, [2020-03-09T13:41:06.292835 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2020-03-09T13:41:06.292876 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+E, [2020-03-09T13:41:06.292916 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor/base.rb:466:in `start'
+E, [2020-03-09T13:41:06.292958 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/bin/kitchen:13:in `block in <top (required)>'
+E, [2020-03-09T13:41:06.293013 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2020-03-09T13:41:06.293065 #19020] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/bin/kitchen:13:in `<top (required)>'
+E, [2020-03-09T13:41:06.293176 #19020] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:365:in `load'
+E, [2020-03-09T13:41:06.293289 #19020] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:365:in `<main>'
+E, [2020-03-09T13:41:06.293344 #19020] ERROR -- Kitchen: ----End Backtrace-----

@@ -1,0 +1,73 @@
+---
+- name: app
+  hosts: app
+  remote_user: app
+  become: true
+
+  tasks:
+    - name: get update
+      apt:
+        upgrade: yes
+        update_cache: yes
+
+
+
+    - name: install java
+      shell: sudo apt-get install openjdk-8-jre-headless -y
+
+    - name: ensure the jenkins apt repository key is installed
+      apt_key: url=https://pkg.jenkins.io/debian-stable/jenkins.io.key state=present
+      become: yes
+
+
+
+    - name: ensure the repository is configured
+      apt_repository: repo='deb https://pkg.jenkins.io/debian-stable binary/' state=present
+      become: yes
+
+
+
+    - name: ensure jenkins is installed
+      apt: name=jenkins update_cache=yes
+      become: yes
+
+
+
+    - name: ensure jenkins is running
+      service: name=jenkins state=started
+
+
+- name: server1
+  hosts: server1
+  remote_user: vagrant
+  become: true
+
+  tasks:
+
+    - name: get update
+      apt:
+        upgrade: yes
+        update_cache: yes
+
+    - name: install java
+      shell: sudo apt-get install openjdk-8-jre-headless -y
+
+
+    - name: Install the gpg key for nodejs LTS
+      apt_key:
+        url: "https://deb.nodesource.com/gpgkey/nodesource.gpg.key"
+        state: present
+
+    - name: install software properties common
+      shell: apt-get install software-properties-common -y
+
+    - name: Install the nodejs LTS repos
+      apt_repository:
+        repo: "deb https://deb.nodesource.com/node_12.x {{ ansible_distribution_release }} main"
+        state: present
+
+    - name: Install the nodejs
+      apt:
+        name: nodejs
+
+#find jenkins
