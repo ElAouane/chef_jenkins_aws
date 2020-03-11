@@ -16,7 +16,7 @@ describe 'node_cookbook::default' do
       expect { chef_run }.to_not raise_error
     end
     it 'runs apt get update' do
-      expect { chef_run }.to update_apt_update 'update_source'
+      expect { chef_run }.to update_apt_update 'update_sources'
     end
     it 'should install nginx' do
       expect(chef_run).to install_package "nginx"
