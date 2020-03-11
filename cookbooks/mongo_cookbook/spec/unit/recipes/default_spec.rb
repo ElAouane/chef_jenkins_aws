@@ -12,11 +12,11 @@ describe 'mongo_cookbook::default' do
       expect { chef_run }.to_not raise_error
     end
     it 'should add mongo to the sources list' do
-      expect( chef_run ).to add_apt_repository('mongodb-org')
+      expect(chef_run).to add_apt_repository('mongodb-org')
     end
 
     it 'should install mongod' do
-      expect( chef_run ).to upgrade_package 'mongodb-org'
+      expect(chef_run).to upgrade_package 'mongodb-org'
     end
 
     it 'should update the mongod service config' do
@@ -36,11 +36,11 @@ describe 'mongo_cookbook::default' do
     end
 
     it 'should enable "mongod" service' do
-      expect(chef_run).to enable_service 'mongodb'
+      expect(chef_run).to enable_service 'mongod'
     end
 
     it 'should start "mongod" service' do
-      expect(chef_run).to start_service 'mongodb'
+      expect(chef_run).to start_service 'mongod'
     end
   end
 end
