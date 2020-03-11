@@ -40,7 +40,7 @@ describe 'node_cookbook::default' do
       expect(chef_run).to install_nodejs_npm('pm2')
     end
     it 'should create a proxy.conf template in /etc/nginx/sites-available' do
-      expect(chef_run).to create_template("/etc/nginx/sites-available/proxy.conf").with_variable(proxy_port: 3000)
+      expect(chef_run).to create_template("/etc/nginx/sites-available/proxy.conf").with_variables(proxy_port: 3000)
     end
 
     it 'should delete the symlink from the default config in site-enables' do
